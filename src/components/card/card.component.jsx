@@ -10,8 +10,8 @@ class Card extends Component{
                 <img 
                     alt={pokename}
                     src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${pokeid}.gif`}
-                />
-                <div>{pokename.toUpperCase()}</div>
+                /><br></br>
+                <div><b>{pokename.toUpperCase()}</b></div>
             </div>
         )
     }

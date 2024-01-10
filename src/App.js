@@ -13,7 +13,7 @@ class App extends Component{
   }
 
   componentDidMount(){
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=1302',{
+    fetch('https://pokeapi.co/api/v2/pokemon?limit=100',{
     mode:'cors',  
     method: 'GET',
     headers: {
@@ -47,7 +47,7 @@ class App extends Component{
     })
     return(
       <div>
-        <h1 className=''>PokeDex</h1>
+        <h1 className='font-title'>PokeDex</h1>
         <SearchBox className="pokemon-search-box" placeholder="Gotta Search 'Em All!" onSearchHandler={onSearchPokemon}/>
         <CardList pokemons={filteredPokemons}/>
       </div>
