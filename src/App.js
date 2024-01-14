@@ -9,6 +9,8 @@ const App = () => {
   const [pokemons, setPokemons] = useState([]);
   const [filteredPokemons, setFilteredPokemons] = useState(pokemons);
 
+  console.log("rendered");
+  
   useEffect(()=>{
     fetch('https://pokeapi.co/api/v2/pokemon?limit=100',{
     mode:'cors',  
